@@ -20,7 +20,9 @@ from . import views #el punto indica que views esta a la misma altura que urls
 urlpatterns = [
     path('fecha-nacimiento/<int:edad>', views.calcular_fecha_nacimiento),
     path('hola/', views.hola),
+    path('mi-template/<str:nombre>', views.tu_template),
     path('mi-template/', views.mi_template),
+    path('prueba-template/', views.prueba_template),
     path('fecha/', views.fecha),
     path('admin/', admin.site.urls),
 ]
